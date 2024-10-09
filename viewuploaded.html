@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Uploaded Documents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: #DDD0C8; /* Background color */
+        }
+
+        h2 {
+            color: #323232; /* Title color */
+            margin-bottom: 20px;
+        }
+
+        .document-list {
+            background-color: #fff2eb; /* Background for document list */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .document {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .document:last-child {
+            border-bottom: none;
+        }
+
+        .actions {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .actions a {
+            padding: 12px 20px;
+            background-color: #323232; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            width: 100%;
+            margin: 5px 0;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .actions a:hover {
+            background-color: #32323244; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+    <h2>Uploaded Documents</h2>
+
+    <div class="document-list">
+        <div class="document">
+            <p><strong>Document Name:</strong> Passport</p>
+            <p><strong>Date Uploaded:</strong> October 5, 2024</p>
+            <p><strong>Status:</strong> Verified</p>
+        </div>
+        <div class="document">
+            <p><strong>Document Name:</strong> Aadhaar</p>
+            <p><strong>Date Uploaded:</strong> September 30, 2024</p>
+            <p><strong>Status:</strong> Pending</p>
+        </div>
+        <div class="document">
+            <p><strong>Document Name:</strong> PAN Card</p>
+            <p><strong>Date Uploaded:</strong> September 25, 2024</p>
+            <p><strong>Status:</strong> Rejected</p>
+        </div>
+    </div>
+
+    <div class="actions">
+        <a href="dashboard.html">Back to Dashboard</a>
+        <a href="upload.html">Upload New Document</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: #DDD0C8; /* Background color */
+        }
+
+        h2 {
+            color: #323232; /* Title color */
+            margin-bottom: 20px;
+        }
+
+        .user-info {
+            background-color: #fff2eb; /* Background for user info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .user-info h3 {
+            margin: 0 0 10px;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+            color: #333; /* Text color */
+        }
+
+        .actions {
+            width: 80%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .actions a {
+            padding: 12px 20px;
+            background-color: #323232; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            width: 100%;
+            margin: 5px 0;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .actions a:hover {
+            background-color: #32323244; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+    <h2>User Dashboard</h2>
+
+    <div class="user-info">
+        <h3>Welcome, [User's Name]!</h3>
+        <p><strong>Email:</strong> user@example.com</p>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Date of Birth:</strong> January 1, 1990</p>
+        <p><strong>KYC Status:</strong> <span style="color: green;">Approved</span></p> <!-- KYC status -->
+    </div>
+
+    <div class="notifications">
+        <h3>Notifications</h3>
+        <p>You have 2 new messages.</p>
+        <p>Your last document upload was successful.</p>
+    </div>
+
+    <div class="recent-activity">
+        <h3>Recent Activity</h3>
+        <p>Uploaded document: Passport on October 5, 2024.</p>
+        <p>Profile updated on October 1, 2024.</p>
+    </div>
+
+    <div class="actions">
+        <h3>Actions</h3>
+        <a href="upload.html">Upload KYC Document</a>
+        <a href="viewuploaded.html">View Uploaded Documents</a>
+        <a href="edit_profile.html">Edit Profile</a>
+        <a href="logout.html">Logout</a>
+    </div>
+</body>
+</html>

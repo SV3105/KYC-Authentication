@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #DDD0C8; /* Match background color with registration */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            background-color: #fff2eb; /* Match container color with registration */
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgb(9, 8, 24);
+            transition-duration: 0.5s;
+        }
+
+        .container h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+            color: #323232; /* Title color */
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: bold;
+            color: #333; /* Label color */
+        }
+
+        .container input[type="email"], 
+        .container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #323232; /* Match button color with registration */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container button:hover {
+            background-color: #32323244; /* Match hover color with registration */
+        }
+
+        .container p {
+            margin-top: 15px;
+        }
+
+        .container a {
+            color: #323232; /* Match link color with registration */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.html" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html"><u>Register here</a></p>
+    </div>
+</body>
+</html>

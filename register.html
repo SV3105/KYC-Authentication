@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #DDD0C8;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            background-color: #fff2eb;
+            padding: 5px 30px 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+        .container:hover{
+            box-shadow: 0 0 20px rgb(9, 8, 24);
+            transition-duration: 0.5s;
+        }
+        .container h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #323232;
+            margin-bottom: 25px;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container input[type="text"], 
+        .container input[type="email"], 
+        .container input[type="password"], 
+        .container textarea, 
+        .container input[type="date"], 
+        .container input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #323232;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .container button:hover {
+            background-color: #32323244;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="register.html" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

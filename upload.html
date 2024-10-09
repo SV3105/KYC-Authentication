@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #DDD0C8; /* Background color */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            background-color: #fff2eb; /* Container color */
+            padding: 20px 40px 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .container:hover{
+            box-shadow: 0 0 20px rgb(9, 8, 24);
+            transition-duration: 0.5s;
+        }
+        .container h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 30px;
+            color: #323232; /* Title color */
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: bold;
+            color: #333; /* Label color */
+        }
+
+        .container input[type="file"], 
+        .container select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #323232; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .container button:hover {
+            background-color: #323232a2; /* Hover effect */
+        }
+
+        .container p {
+            margin-top: 15px;
+        }
+
+        .container a {
+            color: #323232; /* Link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload KYC Document</h2>
+        <form action="{{ url_for('upload_document') }}" method="POST" enctype="multipart/form-data">
+            <label for="document">Select Document:</label>
+            <input type="file" id="document" name="document" required>
+            
+            <label for="document_type">Document Type:</label>
+            <select id="document_type" name="document_type" required>
+                <option value="passport">Passport</option>
+                <option value="aadhaar">Aadhaar</option>
+                <option value="pan">PAN Card</option>
+            </select>
+            
+            <button type="submit">Upload</button>
+        </form>
+        <p><a href="dashboard.html">Back to Dashboard</a></p>
+    </div>
+</body>
+</html>
